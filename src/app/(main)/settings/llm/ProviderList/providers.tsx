@@ -93,8 +93,9 @@ export const useProviderList = (): ProviderItem[] => {
         docUrl: urlJoin(BASE_DOC_URL, 'ollama'),
       },
       {
-        ...azureProvider,
-        docUrl: urlJoin(BASE_DOC_URL, 'azure'),
+        ...AnthropicProviderCard,
+        docUrl: urlJoin(BASE_DOC_URL, 'anthropic'),
+        title: <AnthropicBrand />,
       },
       {
         ...GoogleProviderCard,
@@ -102,9 +103,8 @@ export const useProviderList = (): ProviderItem[] => {
         title: <GoogleBrand />,
       },
       {
-        ...AnthropicProviderCard,
-        docUrl: urlJoin(BASE_DOC_URL, 'anthropic'),
-        title: <AnthropicBrand />,
+        ...azureProvider,
+        docUrl: urlJoin(BASE_DOC_URL, 'azure'),
       },
       {
         ...bedrockProvider,
@@ -116,6 +116,16 @@ export const useProviderList = (): ProviderItem[] => {
         title: <GroqBrand />,
       },
       {
+        ...MistralProviderCard,
+        docUrl: urlJoin(BASE_DOC_URL, 'mistral'),
+        title: <Mistral.Combine size={26} type={'color'} />,
+      },
+      {
+        ...PerplexityProviderCard,
+        docUrl: urlJoin(BASE_DOC_URL, 'perplexity'),
+        title: <Perplexity.Combine size={24} type={'color'} />,
+      },
+      {
         ...OpenRouterProviderCard,
         docUrl: urlJoin(BASE_DOC_URL, 'openrouter'),
         title: <OpenRouter.Combine iconProps={{ color: OpenRouter.colorPrimary }} size={20} />,
@@ -125,25 +135,21 @@ export const useProviderList = (): ProviderItem[] => {
         docUrl: urlJoin(BASE_DOC_URL, 'togetherai'),
         title: <Together.Combine size={26} type={'color'} />,
       },
+      
+      {
+        ...ZhiPuProviderCard,
+        docUrl: urlJoin(BASE_DOC_URL, 'zhipu'),
+        title: <Zhipu.Combine size={32} type={'color'} />,
+      },
       {
         ...QwenProviderCard,
         docUrl: urlJoin(BASE_DOC_URL, 'qwen'),
         title: <Tongyi.Combine extra={'千问'} size={26} type={'color'} />,
       },
       {
-        ...DeepSeekProviderCard,
-        docUrl: urlJoin(BASE_DOC_URL, 'deepseek'),
-        title: <DeepSeek.Combine size={28} type={'color'} />,
-      },
-      {
-        ...MinimaxProviderCard,
-        docUrl: urlJoin(BASE_DOC_URL, 'minimax'),
-        title: <Minimax.Combine size={32} type={'color'} />,
-      },
-      {
-        ...MistralProviderCard,
-        docUrl: urlJoin(BASE_DOC_URL, 'mistral'),
-        title: <Mistral.Combine size={26} type={'color'} />,
+        ...ZeroOneProviderCard,
+        docUrl: urlJoin(BASE_DOC_URL, '01ai'),
+        title: <ZeroOne.Text size={20} />,
       },
       {
         ...MoonshotProviderCard,
@@ -151,19 +157,14 @@ export const useProviderList = (): ProviderItem[] => {
         title: <MoonshotBrand />,
       },
       {
-        ...PerplexityProviderCard,
-        docUrl: urlJoin(BASE_DOC_URL, 'perplexity'),
-        title: <Perplexity.Combine size={24} type={'color'} />,
+        ...MinimaxProviderCard,
+        docUrl: urlJoin(BASE_DOC_URL, 'minimax'),
+        title: <Minimax.Combine size={32} type={'color'} />,
       },
       {
-        ...ZhiPuProviderCard,
-        docUrl: urlJoin(BASE_DOC_URL, 'zhipu'),
-        title: <Zhipu.Combine size={32} type={'color'} />,
-      },
-      {
-        ...ZeroOneProviderCard,
-        docUrl: urlJoin(BASE_DOC_URL, '01ai'),
-        title: <ZeroOne.Text size={20} />,
+        ...DeepSeekProviderCard,
+        docUrl: urlJoin(BASE_DOC_URL, 'deepseek'),
+        title: <DeepSeek.Combine size={28} type={'color'} />,
       },
       {
         ...StepfunProviderCard,
