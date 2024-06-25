@@ -20,18 +20,18 @@ const ZhiPu: ModelProviderCard = {
       tokens: 128_000,
     },
     {
+      description: 'GLM-4-Air 的高性能版本，效果不变，推理速度达到其2.6倍',
+      displayName: 'GLM-4-Airx',
+      functionCall: true,
+      id: 'glm-4-airx',
+      tokens: 128_000,
+    },
+    {
       description: '性价比最高的版本，综合性能接近GLM-4，速度快，价格实惠',
       displayName: 'GLM-4-Air',
       enabled: true,
       functionCall: true,
       id: 'glm-4-air',
-      tokens: 128_000,
-    },
-    {
-      description: 'GLM-4-Air 的高性能版本，效果不变，推理速度达到其2.6倍',
-      displayName: 'GLM-4-Airx',
-      functionCall: true,
-      id: 'glm-4-airx',
       tokens: 128_000,
     },
     {
@@ -47,14 +47,7 @@ const ZhiPu: ModelProviderCard = {
       id: 'glm-4v',
       tokens: 2000,
       vision: true,
-    },
-    {
-      description: '适用于对知识量、推理能力、创造力要求较高的场景，比如广告文案、小说写作、知识类写作、代码生成等',
-      displayName: 'GLM-3-Turbo',
-      functionCall: true,
-      id: 'glm-3-turbo',
-      tokens: 128_000,
-    },
+    }
   ],
   checkModel: 'glm-4-flash',
   id: 'zhipu',
